@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo kpop</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+   <a href="cutscene.html"> <button  id="iniciar" onclick="iniciarAudio()" class="iniciar">INICIAR</button></a>
+    <h1 class="nome">K-Stage Challenge</h1><br>
+    <h2 class="nome2">Criado por Larissa Octaviano </h2>
+    <img src="./IMG/inicio.png" alt="Logo" class="imagem-topo">
+   
+    
+
+    <canvas id="canvas" width="800" height="800"></canvas>
+    <audio id="audio" src="./SND/musicajogo.mp3" loop></audio>
+    
+    <button id="btn-som" onclick="iniciarAudio()">Som</button>
+
+    <script>
+        let canvas = document.getElementById("canvas");
+        let ctx = canvas.getContext("2d");
+        let audio = document.getElementById("audio");
+
+        function iniciarAudio() {
+            audio.volume = 0.5;
+            audio.play().catch(function(error){
+                console.error("Erro ao tentar reproduzir o áudio:", error);
+            });
+        }
+
+        
+        function loop() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            requestAnimationFrame(loop);
+        }
+
+    
+        window.onload = function() {
+            loop();
+        }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutscene</title>
+    
+</head>
+<body>
+    <!-- VÍDEO DE ABERTURA -->
+    <video id="video-cutscene" width="100%" autoplay muted style="display:block;">
+        <source src="./VIDEO/cutssecnenovo.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+    </video>
+
+
+    <script>
+    // Quando o vídeo terminar, vai para a fase 1
+    document.getElementById('video-cutscene').addEventListener('ended', function() {
+        window.location.href = "fase1.html";
+    });
+    </script>
+</body>
+</html>

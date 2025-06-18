@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    max-width: 2000px;  
+    max-height: 700px;
+}
+
+body{
+    background-color: black;
+    color:aliceblue;
+}
+
+.imagem-topo {
+    position: absolute; /* Permite mover a imagem para um ponto específico */
+    top: 45px; /* distância do topo */
+    left: 50%; /* posiciona o centro da imagem no meio da página */
+    transform: translateX(-50%); /* move metade da largura para a esquerda */
+    width: 1100px; /* largura específica */
+    height: 700px; /* altura proporcional */
+}
+
+#btn-som {
+    padding: 12px 24px;
+    font-size: 10px;
+    background-color: #901694;  /* cor de fundo */
+    color: white;  /* cor do texto */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute; /* Permite mover o botão para um ponto específico */
+    top: 20px;  /* Distância do topo da página */
+    left: 20px; /* Distância da borda esquerda da página */
+}
+/* Efeito de hover */
+#btn-som:hover {
+    background-color: #d15eff;
+}
+.nome { 
+    position: absolute; /* ou fixed, se quiser que fique fixo ao rolar */
+    top: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    font-weight: bold;
+    color :#e297ff
+   
+ 
+}
+.iniciar{
+    padding: 12px 24px;
+    font-size: 40px;
+    background-color: #901694;  /* cor de fundo */
+    color: white;  /* cor do texto */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute; /* Permite mover o botão para um ponto específico */
+    top: 600px;  /* Distância do topo da página */
+    left: 300px; /* Distância da borda esquerda da página */
+    z-index: 10;
+}
+.iniciar:hover{
+    background-color :#e297ff;
+}
+.nome2{ 
+    position: absolute; /* ou fixed, se quiser que fique fixo ao rolar */
+    top: 15px;
+    left: 80%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    color :#fe99f7
+   
+}
