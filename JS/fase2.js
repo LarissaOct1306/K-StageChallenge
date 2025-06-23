@@ -129,10 +129,10 @@ function iniciarAudio() {
 }
 
 const backgroundImage = new Image();
-backgroundImage.src = './img/cenario2jogo.jpg';
+backgroundImage.src = './IMG/cenario2jogo.jpg';
 
 const personagem = new Image();
-personagem.src = './img/personagem.png';
+personagem.src = './IMG/personagem.png';
 
 // Confetes de estrela (certos) - 8 imagens diferentes
 const confeteEstrela1 = new Image();
